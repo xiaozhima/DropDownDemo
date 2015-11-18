@@ -1,9 +1,9 @@
 //
-//  DropDownItemDataTool.m
-//  Template
+//  DropDownItemDataTool.h
+//  Xiaozhima
 //
-//  Created by caimiao on 15/11/16.
-//  Copyright © 2015年 iOS developer. All rights reserved.
+//  Created by zhangqi on 15/11/18.
+//  Copyright © 2015年 Xiaozhima. All rights reserved.
 //
 
 #import "DropDownItemDataTool.h"

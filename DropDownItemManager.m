@@ -1,9 +1,9 @@
 //
 //  DropDownItemManager.m
-//  Template
+//  Xiaozhima
 //
-//  Created by caimiao on 15/11/13.
-//  Copyright © 2015年 iOS developer. All rights reserved.
+//  Created by zhangqi on 15/11/18.
+//  Copyright © 2015年 Xiaozhima. All rights reserved.
 //
 
 #import "DropDownItemManager.h"
@@ -16,13 +16,6 @@ NSInteger const MAINTITLETAG = 1000000;
     CGFloat animationTime;
     /** 动画样式 */
     UIViewAnimationOptions animationOptions;
-    
-    /** 单元左间距 */
-    CGFloat leftSpace;
-    /** 单元格size */
-    CGSize itemSize;
-    /** 单元格origin */
-    CGSize itemOrigin;
 }
 /** 主标题单元格背景承载视图 */
 @property (weak, nonatomic) UIView *mainBackgroundView;
@@ -149,9 +142,6 @@ NSInteger const MAINTITLETAG = 1000000;
 }
 /** 主标题下所有内容单元格视图 */
 -(void)loadItem{
-    if (self.tilt == DropDownItemTiltLeft) {
-        leftSpace = itemCount * itemCount * self.frame.size.height / 28.0f;
-    }
     self.allContentItemArray = [[NSMutableArray alloc] initWithCapacity:itemCount];
     for (NSInteger i = 0;i < itemCount;i++) {
         DropDownItem *item = [[DropDownItem alloc] init];

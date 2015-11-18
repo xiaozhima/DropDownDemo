@@ -1,13 +1,11 @@
 //
 //  DropDownItem.m
-//  Template
+//  Xiaozhima
 //
-//  Created by caimiao on 15/11/13.
-//  Copyright © 2015年 iOS developer. All rights reserved.
+//  Created by zhangqi on 15/11/18.
+//  Copyright © 2015年 Xiaozhima. All rights reserved.
 //
-
 #import "DropDownItem.h"
-#import "UIImageView+WebCache.h"
 @interface DropDownItem ()
 /** 单元格背景承载视图 */
 @property (weak, nonatomic) UIView *mainBackgroundView;

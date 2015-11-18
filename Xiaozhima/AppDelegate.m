@@ -2,12 +2,12 @@
 //  AppDelegate.m
 //  Xiaozhima
 //
-//  Created by caimiao on 15/11/18.
+//  Created by zhangqi on 15/11/18.
 //  Copyright © 2015年 Xiaozhima. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
+#import "XiaozhimaDropDownViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[XiaozhimaDropDownViewController alloc] init];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
